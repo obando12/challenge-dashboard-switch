@@ -1,0 +1,253 @@
+//Primary
+$limeGreen: hsl(163, 72%, 41%);
+$brightRed: hsl(356, 69%, 56%);
+$facebook: hsl(208, 92%, 53%);
+$twitter: hsl(203, 89%, 53%);
+$youtube: hsl(348, 97%, 39%);
+
+%instagram {
+  background-image: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
+}
+
+%Toggle {
+  border-image-source: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+  border-image-slice: 1;
+}
+$Toggle: hsl(230, 22%, 74%);
+
+//dark
+$VeryDarkBlue: hsl(230, 17%, 14%); //(BG)
+$VeryDarkBlue: hsl(232, 19%, 15%); //(Top BG Pattern)
+$DarkDesaturatedBlue: hsl(228, 28%, 20%); //(Card BG)
+$DesaturatedBlue: hsl(228, 34%, 66%); //(Text)
+$White: hsl(0, 0%, 100%); //(Text)
+
+//ligth
+$ligth-White: hsl(0, 0%, 100%); //(BG)
+$ligth-veryPaleBlue: hsl(225, 100%, 98%); //(Top BG Pattern)
+$ligth-lightGrayishBlue: hsl(227, 47%, 96%); //(Card BG)
+$ligth-darkGrayishBlue: hsl(228, 12%, 44%); //(Text)
+$ligth-veryDarkBlue: hsl(230, 17%, 14%); //(Text)
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: $ligth-White;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 327px;
+  margin: auto;
+}
+p {
+  margin: 0;
+}
+
+.header {
+  padding-top: 40px;
+  &__text {
+    color: $ligth-darkGrayishBlue;
+    font-weight: 700;
+    margin: 15px 0 25px 0;
+  }
+}
+.title {
+  font-size: 24px;
+  margin: 0;
+  color: $ligth-veryDarkBlue;
+
+  &--h2 {
+    color: $ligth-darkGrayishBlue;
+    margin-bottom: 30px;
+  }
+}
+
+.mode {
+  font-weight: 700;
+  color: $ligth-darkGrayishBlue;
+  border-top: 1px solid $Toggle;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 44px;
+
+  &__text {
+    margin: 0;
+  }
+  &__toggle {
+    background-color: $Toggle;
+    border-radius: 20px;
+    width: 50px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+}
+.cards {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 25px;
+  margin-top: 45px;
+  margin-bottom: 52px;
+}
+
+.card {
+  background-color: $ligth-lightGrayishBlue;
+  height: 211px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 5px solid;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+
+  &__user {
+    display: flex;
+    align-items: center;
+    color: $ligth-darkGrayishBlue;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  &__icon {
+    margin-right: 11px;
+  }
+
+  &__number {
+    margin: 0;
+  }
+
+  &__followers {
+    font-size: 50px;
+    text-align: center;
+    color: $ligth-veryDarkBlue;
+    font-weight: 700;
+  }
+
+  &__span {
+    font-size: 10px;
+    display: block;
+    font-weight: 400;
+    color: $ligth-darkGrayishBlue;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  &__today {
+    display: flex;
+    align-items: center;
+    color: $limeGreen;
+    font-weight: 700;
+  }
+  &__today--red {
+    color: $brightRed;
+  }
+
+  &__arrow {
+    margin-right: 6px;
+  }
+
+  &:nth-child(1) {
+    border-color: $facebook;
+  }
+
+  &:nth-child(2) {
+    border-color: $twitter;
+  }
+
+  &:nth-child(3) {
+    border: none;
+  }
+
+  &:nth-child(3)::before {
+    content: "";
+    height: 5px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    @extend %instagram;
+  }
+
+  &:nth-child(4) {
+    border-color: $youtube;
+  }
+}
+
+.overview {
+  margin-bottom: 47px;
+  display: grid;
+  gap: 20px;
+}
+.card-view {
+  height: 127px;
+  background-color: $ligth-lightGrayishBlue;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    width: 279px;
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $ligth-darkGrayishBlue;
+    font-weight: 700;
+  }
+
+  &__numbers {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__total {
+    display: flex;
+    align-items: center;
+    color: $limeGreen;
+    font-weight: 700;
+  }
+
+  &__sum {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  &__new {
+    font-size: 12px;
+    margin-left: 3px;
+  }
+  &__new--down {
+    color: $brightRed;
+  }
+}
