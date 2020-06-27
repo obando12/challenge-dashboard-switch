@@ -19,13 +19,19 @@
     <title>Frontend Mentor | [Challenge Name Here]</title>
   </head>
   <body>
-    <header class="header container">
-      <h1 class="title">Social Media Dashboard</h1>
-      <p class="header__text">Total Followers: 23,004</p>
-      <div class="mode">
-        <p class="mode__text">Dark Mode</p>
-        <div class="mode__toggle">
-          <div class="mode__ball"></div>
+    <header class="header">
+      <div class="header__content container">
+        <div>
+          <h1 class="title">Social Media Dashboard</h1>
+          <p class="header__text">Total Followers: 23,004</p>
+        </div>
+
+        <div class="mode">
+          <p class="mode__text">Dark Mode</p>
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label for="checkbox" class="mode__toggle">
+            <div class="mode__ball"></div>
+          </label>
         </div>
       </div>
     </header>
@@ -107,136 +113,138 @@
       </div>
     </section>
 
-    <section class="overview container">
+    <section class="container">
       <h2 class="title title--h2">Overview - Today</h2>
-
-      <div class="card-view">
-        <div class="card-view__content">
-          <div class="card-view__top">
-            <p>Page Views</p>
-            <img src="./images/icon-facebook.svg" alt="" />
-          </div>
-          <div class="card-view__numbers">
-            <p class="card-view__sum">87</p>
-            <div class="card-view__total">
-              <img src="./images/icon-up.svg" alt="" />
-              <p class="card-view__new">3%</p>
+      <div class="cards-view">
+        <div class="card-view">
+          <div class="card-view__content">
+            <div class="card-view__top">
+              <p>Page Views</p>
+              <img src="./images/icon-facebook.svg" alt="" />
+            </div>
+            <div class="card-view__numbers">
+              <p class="card-view__sum">87</p>
+              <div class="card-view__total">
+                <img src="./images/icon-up.svg" alt="" />
+                <p class="card-view__new">3%</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="card-view">
-        <div class="card-view__content">
-          <div class="card-view__top">
-            <p>Likes</p>
-            <img src="./images/icon-facebook.svg" alt="" />
-          </div>
-          <div class="card-view__numbers">
-            <p class="card-view__sum">52</p>
-            <div class="card-view__total">
-              <img src="./images/icon-down.svg" alt="" />
-              <p class="card-view__new card-view__new--down">2%</p>
+        <div class="card-view">
+          <div class="card-view__content">
+            <div class="card-view__top">
+              <p>Likes</p>
+              <img src="./images/icon-facebook.svg" alt="" />
+            </div>
+            <div class="card-view__numbers">
+              <p class="card-view__sum">52</p>
+              <div class="card-view__total">
+                <img src="./images/icon-down.svg" alt="" />
+                <p class="card-view__new card-view__new--down">2%</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="card-view">
-        <div class="card-view__content">
-          <div class="card-view__top">
-            <p>Likes</p>
-            <img src="./images/icon-instagram.svg" alt="" />
-          </div>
-          <div class="card-view__numbers">
-            <p class="card-view__sum">5462</p>
-            <div class="card-view__total">
-              <img src="./images/icon-up.svg" alt="" />
-              <p class="card-view__new">2257%</p>
+        <div class="card-view">
+          <div class="card-view__content">
+            <div class="card-view__top">
+              <p>Likes</p>
+              <img src="./images/icon-instagram.svg" alt="" />
+            </div>
+            <div class="card-view__numbers">
+              <p class="card-view__sum">5462</p>
+              <div class="card-view__total">
+                <img src="./images/icon-up.svg" alt="" />
+                <p class="card-view__new">2257%</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="card-view">
-        <div class="card-view__content">
-          <div class="card-view__top">
-            <p>Profile Views</p>
-            <img src="./images/icon-instagram.svg" alt="" />
-          </div>
-          <div class="card-view__numbers">
-            <p class="card-view__sum">52k</p>
-            <div class="card-view__total">
-              <img src="./images/icon-up.svg" alt="" />
-              <p class="card-view__new">1375%</p>
+        <div class="card-view">
+          <div class="card-view__content">
+            <div class="card-view__top">
+              <p>Profile Views</p>
+              <img src="./images/icon-instagram.svg" alt="" />
+            </div>
+            <div class="card-view__numbers">
+              <p class="card-view__sum">52k</p>
+              <div class="card-view__total">
+                <img src="./images/icon-up.svg" alt="" />
+                <p class="card-view__new">1375%</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="card-view">
-        <div class="card-view__content">
-          <div class="card-view__top">
-            <p>Retweets</p>
-            <img src="./images/icon-twitter.svg" alt="" />
-          </div>
-          <div class="card-view__numbers">
-            <p class="card-view__sum">117</p>
-            <div class="card-view__total">
-              <img src="./images/icon-up.svg" alt="" />
-              <p class="card-view__new">303%</p>
+        <div class="card-view">
+          <div class="card-view__content">
+            <div class="card-view__top">
+              <p>Retweets</p>
+              <img src="./images/icon-twitter.svg" alt="" />
+            </div>
+            <div class="card-view__numbers">
+              <p class="card-view__sum">117</p>
+              <div class="card-view__total">
+                <img src="./images/icon-up.svg" alt="" />
+                <p class="card-view__new">303%</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="card-view">
-        <div class="card-view__content">
-          <div class="card-view__top">
-            <p>Likes</p>
-            <img src="./images/icon-twitter.svg" alt="" />
-          </div>
-          <div class="card-view__numbers">
-            <p class="card-view__sum">507</p>
-            <div class="card-view__total">
-              <img src="./images/icon-up.svg" alt="" />
-              <p class="card-view__new">553%</p>
+        <div class="card-view">
+          <div class="card-view__content">
+            <div class="card-view__top">
+              <p>Likes</p>
+              <img src="./images/icon-twitter.svg" alt="" />
+            </div>
+            <div class="card-view__numbers">
+              <p class="card-view__sum">507</p>
+              <div class="card-view__total">
+                <img src="./images/icon-up.svg" alt="" />
+                <p class="card-view__new">553%</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="card-view">
-        <div class="card-view__content">
-          <div class="card-view__top">
-            <p>Likes</p>
-            <img src="./images/icon-youtube.svg" alt="" />
-          </div>
-          <div class="card-view__numbers">
-            <p class="card-view__sum">107</p>
-            <div class="card-view__total">
-              <img src="./images/icon-down.svg" alt="" />
-              <p class="card-view__new card-view__new--down">19%</p>
+        <div class="card-view">
+          <div class="card-view__content">
+            <div class="card-view__top">
+              <p>Likes</p>
+              <img src="./images/icon-youtube.svg" alt="" />
+            </div>
+            <div class="card-view__numbers">
+              <p class="card-view__sum">107</p>
+              <div class="card-view__total">
+                <img src="./images/icon-down.svg" alt="" />
+                <p class="card-view__new card-view__new--down">19%</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="card-view">
-        <div class="card-view__content">
-          <div class="card-view__top">
-            <p>Total Views</p>
-            <img src="./images/icon-youtube.svg" alt="" />
-          </div>
-          <div class="card-view__numbers">
-            <p class="card-view__sum">1407</p>
-            <div class="card-view__total">
-              <img src="./images/icon-down.svg" alt="" />
-              <p class="card-view__new card-view__new--down">12%</p>
+        <div class="card-view">
+          <div class="card-view__content">
+            <div class="card-view__top">
+              <p>Total Views</p>
+              <img src="./images/icon-youtube.svg" alt="" />
+            </div>
+            <div class="card-view__numbers">
+              <p class="card-view__sum">1407</p>
+              <div class="card-view__total">
+                <img src="./images/icon-down.svg" alt="" />
+                <p class="card-view__new card-view__new--down">12%</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <script src="app.js"></script>
   </body>
 </html>
